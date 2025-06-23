@@ -1,0 +1,6 @@
+"Prompts","Messages"
+"At capacity","""Sorry, we are currently at our capacity. Please try again after some time."""
+"Queue_loop_flow","Please wait while we connect you to a $.Attributes.selectedqueue"
+"Error","""Sorry, actually a error occured. Please try again after some time."""
+"Out of hours","""Sorry, we are out of hours for now. Please try again after some time."""
+"Welcome","""Welcome to the Food Haven. Hi, I am Daniel. You can place your order here or book seats and events or also leave a voicemail for us if you want. We can also connect you to our customer care if you are facing any issues."""
