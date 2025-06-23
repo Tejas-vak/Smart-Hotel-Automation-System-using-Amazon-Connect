@@ -1,0 +1,537 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "5d3f4d7f-895d-4dad-9deb-9afdaac913e3",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 197.6,
+      "y": 165.6
+    },
+    "ActionMetadata": {
+      "5d3f4d7f-895d-4dad-9deb-9afdaac913e3": {
+        "position": {
+          "x": 302.4,
+          "y": 174.4
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "e1ba0397-f921-496e-be3c-9447f73ba270",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358591_rest_placeorder"
+          },
+          {
+            "id": "330d6678-f4ea-46e5-af59-54e3174c04bf",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358591_rest_bookseats"
+          },
+          {
+            "id": "f43ffaf4-d6ce-476f-9539-da766fadfe98",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358591_rest_bookevents"
+          },
+          {
+            "id": "cc3dcba1-66ec-464e-8279-2dfcaed62249",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2358591_rest_customercare"
+          }
+        ]
+      },
+      "a3a112e6-725e-4dc5-9a85-e06283c13ae7": {
+        "position": {
+          "x": 2051.2,
+          "y": 268
+        }
+      },
+      "2d6f76a4-625d-49b9-8155-5e27711e51e3": {
+        "position": {
+          "x": 2345.6,
+          "y": 308.8
+        }
+      },
+      "da80be83-ccea-4803-9ab1-8d71e74bb596": {
+        "position": {
+          "x": 1811.2,
+          "y": 249.6
+        }
+      },
+      "fca5dd58-6e08-4a27-a3d2-af227bc4dd17": {
+        "position": {
+          "x": 575.2,
+          "y": 328
+        },
+        "dynamicParams": []
+      },
+      "b84846d2-2162-4a8e-b542-a1da1684f187": {
+        "position": {
+          "x": 578.4,
+          "y": 123.2
+        },
+        "dynamicParams": []
+      },
+      "2dcec000-b574-4045-b521-07321483034c": {
+        "position": {
+          "x": 564.8,
+          "y": 533.6
+        },
+        "dynamicParams": []
+      },
+      "b2703710-0d4d-449e-92c2-d65f57f293d9": {
+        "position": {
+          "x": 583.2,
+          "y": -75.2
+        },
+        "dynamicParams": []
+      },
+      "9fdbd176-d39b-441c-bce9-9b590da35e2e": {
+        "position": {
+          "x": 2048.8,
+          "y": 516
+        }
+      },
+      "f734c691-6233-4c37-ab92-16319ef48a4c": {
+        "position": {
+          "x": 1565.6,
+          "y": 246.4
+        }
+      },
+      "518b4845-d13f-4f83-aadb-c2f07848a1aa": {
+        "position": {
+          "x": 1288.8,
+          "y": 552.8
+        }
+      },
+      "9735845e-eefb-4845-ae3c-89871bee464e": {
+        "position": {
+          "x": 1638.4,
+          "y": 733.6
+        },
+        "dynamicParams": []
+      },
+      "6c177afd-05c7-45d5-ae93-8ccc3130f668": {
+        "position": {
+          "x": 1502.4,
+          "y": -31.2
+        }
+      },
+      "0360e4f7-f04b-44ae-87c8-f8187253e6a4": {
+        "position": {
+          "x": 1301.6,
+          "y": 220
+        },
+        "conditionMetadata": [
+          {
+            "id": "e7f2db42-9907-4c07-9f29-2328a8ebd95c",
+            "value": "1"
+          }
+        ]
+      },
+      "35d94f64-923c-49ea-8cb6-bf018a4809b7": {
+        "position": {
+          "x": 975.2,
+          "y": 213.6
+        },
+        "parameters": {
+          "Messages": [
+            null,
+            {
+              "PromptId": {
+                "displayName": "Music_Jazz_MyTimetoFly_Inst.wav"
+              }
+            }
+          ],
+          "InterruptFrequencySeconds": {
+            "unit": 60
+          }
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/prompt/dcc69606-7a96-46c4-af98-da1b35c07828",
+            "text": "Music_Jazz_MyTimetoFly_Inst.wav",
+            "type": "Prompt"
+          }
+        ],
+        "timeoutUnit": {
+          "value": "min"
+        }
+      },
+      "5c0d7d77-52e3-4338-80d2-55d54705714a": {
+        "position": {
+          "x": 1236.8,
+          "y": -56
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "6bdd0b6a-22cf-4027-87c1-d7f97e97da00",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "error"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "2358591_rest_custqueue",
+    "description": "audio played when a customer is waiting in queue.",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Queue.Name"
+      },
+      "Identifier": "5d3f4d7f-895d-4dad-9deb-9afdaac913e3",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "2dcec000-b574-4045-b521-07321483034c",
+        "Conditions": [
+          {
+            "NextAction": "b2703710-0d4d-449e-92c2-d65f57f293d9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358591_rest_placeorder"
+              ]
+            }
+          },
+          {
+            "NextAction": "b84846d2-2162-4a8e-b542-a1da1684f187",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358591_rest_bookseats"
+              ]
+            }
+          },
+          {
+            "NextAction": "fca5dd58-6e08-4a27-a3d2-af227bc4dd17",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358591_rest_bookevents"
+              ]
+            }
+          },
+          {
+            "NextAction": "2dcec000-b574-4045-b521-07321483034c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2358591_rest_customercare"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "2dcec000-b574-4045-b521-07321483034c",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you. You will soon receive a call back on your number."
+      },
+      "Identifier": "a3a112e6-725e-4dc5-9a85-e06283c13ae7",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "2d6f76a4-625d-49b9-8155-5e27711e51e3",
+        "Errors": [
+          {
+            "NextAction": "2d6f76a4-625d-49b9-8155-5e27711e51e3",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "2d6f76a4-625d-49b9-8155-5e27711e51e3",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "99",
+        "MaximumConnectionAttempts": "1"
+      },
+      "Identifier": "da80be83-ccea-4803-9ab1-8d71e74bb596",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "a3a112e6-725e-4dc5-9a85-e06283c13ae7",
+        "Errors": [
+          {
+            "NextAction": "9fdbd176-d39b-441c-bce9-9b590da35e2e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedqueue": "book the event"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "fca5dd58-6e08-4a27-a3d2-af227bc4dd17",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "35d94f64-923c-49ea-8cb6-bf018a4809b7",
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedqueue": "book the seats"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "b84846d2-2162-4a8e-b542-a1da1684f187",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "35d94f64-923c-49ea-8cb6-bf018a4809b7",
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedqueue": "help you"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "2dcec000-b574-4045-b521-07321483034c",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "35d94f64-923c-49ea-8cb6-bf018a4809b7",
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "selectedqueue": "Place the order"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "b2703710-0d4d-449e-92c2-d65f57f293d9",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "35d94f64-923c-49ea-8cb6-bf018a4809b7",
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Sorry, an error occured. Please try again later."
+      },
+      "Identifier": "9fdbd176-d39b-441c-bce9-9b590da35e2e",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+        "Errors": [
+          {
+            "NextAction": "2d6f76a4-625d-49b9-8155-5e27711e51e3",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "CallbackNumber": "$.CallbackNumber"
+      },
+      "Identifier": "f734c691-6233-4c37-ab92-16319ef48a4c",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "da80be83-ccea-4803-9ab1-8d71e74bb596",
+        "Errors": [
+          {
+            "NextAction": "9735845e-eefb-4845-ae3c-89871bee464e",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "9fdbd176-d39b-441c-bce9-9b590da35e2e",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "callbackstatus": "error"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "9735845e-eefb-4845-ae3c-89871bee464e",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+        "Errors": [
+          {
+            "NextAction": "9fdbd176-d39b-441c-bce9-9b590da35e2e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "6c177afd-05c7-45d5-ae93-8ccc3130f668",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Sorry, its taking more time than expected to connect you to a agent. Please press 1 if you want a callback on this number."
+      },
+      "Identifier": "0360e4f7-f04b-44ae-87c8-f8187253e6a4",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+        "Conditions": [
+          {
+            "NextAction": "f734c691-6233-4c37-ab92-16319ef48a4c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "9fdbd176-d39b-441c-bce9-9b590da35e2e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "Text": "Please wait while we connect to a agent who will $.Attributes.selectedqueue"
+          },
+          {
+            "PromptId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/prompt/dcc69606-7a96-46c4-af98-da1b35c07828"
+          }
+        ],
+        "InterruptFrequencySeconds": "120"
+      },
+      "Identifier": "35d94f64-923c-49ea-8cb6-bf018a4809b7",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+        "Conditions": [
+          {
+            "NextAction": "5c0d7d77-52e3-4338-80d2-55d54705714a",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "MessagesInterrupted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "518b4845-d13f-4f83-aadb-c2f07848a1aa",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.callbackstatus"
+      },
+      "Identifier": "5c0d7d77-52e3-4338-80d2-55d54705714a",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "0360e4f7-f04b-44ae-87c8-f8187253e6a4",
+        "Conditions": [
+          {
+            "NextAction": "6c177afd-05c7-45d5-ae93-8ccc3130f668",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "error"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "0360e4f7-f04b-44ae-87c8-f8187253e6a4",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    }
+  ]
+}
