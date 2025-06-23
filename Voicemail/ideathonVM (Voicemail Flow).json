@@ -1,0 +1,369 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "cd6ea24c-08b0-4281-9658-9876cd326dfd",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -33.6,
+      "y": -124.8
+    },
+    "ActionMetadata": {
+      "f92efda9-6b6e-44a0-8598-c01bbbc6e5e2": {
+        "position": {
+          "x": 3016,
+          "y": -156
+        }
+      },
+      "b961b448-1a3f-4474-8101-9f3e82efd271": {
+        "position": {
+          "x": 2724,
+          "y": -160
+        }
+      },
+      "f68426b1-0bcf-4d2d-b68e-19af1b8a959a": {
+        "position": {
+          "x": 2720.8,
+          "y": 788.8
+        }
+      },
+      "cd6ea24c-08b0-4281-9658-9876cd326dfd": {
+        "position": {
+          "x": 138.4,
+          "y": -121.6
+        }
+      },
+      "5630e1d0-9df6-480d-a0b8-520533894464": {
+        "position": {
+          "x": 351.2,
+          "y": -120
+        }
+      },
+      "4b70a87a-b2dd-47fd-9f20-7968c9dbde97": {
+        "position": {
+          "x": 1507.2,
+          "y": 807.2
+        }
+      },
+      "7a92d097-22e5-4a49-aba7-49fde0796f13": {
+        "position": {
+          "x": 600,
+          "y": -96.8
+        }
+      },
+      "286c208b-9e85-4bf1-bb68-4fc56e9a6a4c": {
+        "position": {
+          "x": 937.6,
+          "y": -98.4
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Beep.wav"
+          }
+        },
+        "promptName": "Beep.wav"
+      },
+      "27389c04-f6be-42c8-878a-62e4ee3ce129": {
+        "position": {
+          "x": 1234.4,
+          "y": -93.6
+        },
+        "toCustomer": false,
+        "fromCustomer": true
+      },
+      "6f38cc2a-695e-4406-87cd-377b46d6c62d": {
+        "position": {
+          "x": 1535.2,
+          "y": -89.6
+        },
+        "conditionMetadata": []
+      },
+      "2a652c9b-0501-46f0-a350-ad58699932c3": {
+        "position": {
+          "x": 2409.6,
+          "y": -148.8
+        }
+      },
+      "cf3d6f10-fac3-4176-a9ba-cdfd484cd50d": {
+        "position": {
+          "x": 1864.8,
+          "y": -132.8
+        },
+        "parameters": {
+          "Attributes": {
+            "languageCode": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "languageCode"
+        ]
+      },
+      "acab0a40-f062-40ae-bba9-4f14d0474e73": {
+        "position": {
+          "x": 2456,
+          "y": 623.2
+        }
+      },
+      "602f82fd-5558-4e0b-939a-d9657a2071ef": {
+        "position": {
+          "x": 2133.6,
+          "y": -143.2
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "kvsrealtimeTranscriber"
+          }
+        },
+        "dynamicMetadata": {}
+      }
+    },
+    "Annotations": [],
+    "name": "ideathonVM",
+    "description": "For UAT using",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "f92efda9-6b6e-44a0-8598-c01bbbc6e5e2",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you for recording your voicemail."
+      },
+      "Identifier": "b961b448-1a3f-4474-8101-9f3e82efd271",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "f92efda9-6b6e-44a0-8598-c01bbbc6e5e2",
+        "Errors": [
+          {
+            "NextAction": "f92efda9-6b6e-44a0-8598-c01bbbc6e5e2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "f68426b1-0bcf-4d2d-b68e-19af1b8a959a",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "cd6ea24c-08b0-4281-9658-9876cd326dfd",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "5630e1d0-9df6-480d-a0b8-520533894464"
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [
+            "Agent",
+            "Customer"
+          ]
+        },
+        "AnalyticsBehavior": {
+          "Enabled": "True",
+          "AnalyticsLanguage": "en-US",
+          "AnalyticsRedactionBehavior": "Disabled",
+          "AnalyticsRedactionResults": "RedactedAndOriginal",
+          "ChannelConfiguration": {
+            "Chat": {
+              "AnalyticsModes": []
+            },
+            "Voice": {
+              "AnalyticsModes": [
+                "PostContact"
+              ]
+            }
+          }
+        }
+      },
+      "Identifier": "5630e1d0-9df6-480d-a0b8-520533894464",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "7a92d097-22e5-4a49-aba7-49fde0796f13"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "An error occurred when we tried to start streaming."
+      },
+      "Identifier": "4b70a87a-b2dd-47fd-9f20-7968c9dbde97",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "f68426b1-0bcf-4d2d-b68e-19af1b8a959a"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Please leave your custom voice message after beep and after message is left please press ash key or any key  to continue."
+      },
+      "Identifier": "7a92d097-22e5-4a49-aba7-49fde0796f13",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "286c208b-9e85-4bf1-bb68-4fc56e9a6a4c",
+        "Errors": [
+          {
+            "NextAction": "4b70a87a-b2dd-47fd-9f20-7968c9dbde97",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:eu-west-2:189243246970:instance/a7d6f9f3-ff74-4bda-b821-dae3a2f14da3/prompt/169778b6-0e70-4473-99b8-8468e09b63e8"
+      },
+      "Identifier": "286c208b-9e85-4bf1-bb68-4fc56e9a6a4c",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "27389c04-f6be-42c8-878a-62e4ee3ce129",
+        "Errors": [
+          {
+            "NextAction": "4b70a87a-b2dd-47fd-9f20-7968c9dbde97",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MediaStreamingState": "Enabled",
+        "MediaStreamType": "Audio",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "From"
+            ]
+          }
+        ]
+      },
+      "Identifier": "27389c04-f6be-42c8-878a-62e4ee3ce129",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "6f38cc2a-695e-4406-87cd-377b46d6c62d",
+        "Errors": [
+          {
+            "NextAction": "acab0a40-f062-40ae-bba9-4f14d0474e73",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "15",
+        "SSML": "<speak>     </speak>"
+      },
+      "Identifier": "6f38cc2a-695e-4406-87cd-377b46d6c62d",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "cf3d6f10-fac3-4176-a9ba-cdfd484cd50d",
+        "Errors": [
+          {
+            "NextAction": "cf3d6f10-fac3-4176-a9ba-cdfd484cd50d",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "cf3d6f10-fac3-4176-a9ba-cdfd484cd50d",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "acab0a40-f062-40ae-bba9-4f14d0474e73",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "MediaStreamingState": "Disabled",
+        "Participants": [
+          {
+            "ParticipantType": "Customer",
+            "MediaDirections": [
+              "To",
+              "From"
+            ]
+          }
+        ],
+        "MediaStreamType": "Audio"
+      },
+      "Identifier": "2a652c9b-0501-46f0-a350-ad58699932c3",
+      "Type": "UpdateContactMediaStreamingBehavior",
+      "Transitions": {
+        "NextAction": "b961b448-1a3f-4474-8101-9f3e82efd271",
+        "Errors": [
+          {
+            "NextAction": "b961b448-1a3f-4474-8101-9f3e82efd271",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "transcribeCall": "false",
+          "saveCallRecording": "true",
+          "languageCode": "$.Attributes.en-US",
+          "transcriptionFunction": "arn:aws:lambda:eu-west-2:189243246970:function:kvsrealtimeConsumer"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "cf3d6f10-fac3-4176-a9ba-cdfd484cd50d",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "602f82fd-5558-4e0b-939a-d9657a2071ef",
+        "Errors": [
+          {
+            "NextAction": "acab0a40-f062-40ae-bba9-4f14d0474e73",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "An error occurred with the KVS trigger lambda function."
+      },
+      "Identifier": "acab0a40-f062-40ae-bba9-4f14d0474e73",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "f68426b1-0bcf-4d2d-b68e-19af1b8a959a"
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:eu-west-2:189243246970:function:kvsrealtimeTranscriber",
+        "InvocationTimeLimitSeconds": "8",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "602f82fd-5558-4e0b-939a-d9657a2071ef",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "2a652c9b-0501-46f0-a350-ad58699932c3",
+        "Errors": [
+          {
+            "NextAction": "acab0a40-f062-40ae-bba9-4f14d0474e73",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
